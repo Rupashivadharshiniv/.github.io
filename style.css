@@ -1,0 +1,121 @@
+/* style.css - Energetic Portfolio Theme */
+
+/* Reset and set base font */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7fafc;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* Navigation Bar */
+nav {
+  background: #ff7e59;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+nav a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #222;
+}
+
+/* Section Headings with Handwriting Font */
+h1, h2 {
+  font-family: 'MyHandwriting', cursive, 'Segoe UI', 'Arial', sans-serif;
+  letter-spacing: 2px;
+  color: #ff7e59;
+  text-shadow: 1px 1px 10px rgba(255, 126, 89, 0.08);
+}
+
+section {
+  padding: 2em 1em;
+  max-width: 700px;
+  margin: 0 auto 3em auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+/* Project Cards */
+.project-card {
+  background: #ffe7dc;
+  border-left: 6px solid #ff7e59;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(255,126,89,0.05);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+/* Badges & Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 1em;
+  padding-left: 1.4em;
+  position: relative;
+}
+
+ul li::before {
+  content: "🏆";
+  position: absolute;
+  left: 0;
+}
+
+.highlight {
+  color: #1772f0;
+  background: #e3f2fd;
+  padding: 0.2em 0.5em;
+  border-radius: 8px;
+}
+
+/* Yearbook Polaroids */
+#yearbook div {
+  display: inline-block;
+  margin: 0.5em;
+  background: #fffbea;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.12);
+  border-radius: 12px;
+  padding: 0.5em 1em;
+}
+
+footer {
+  text-align: center;
+  background: #ff7e59;
+  color: #fff;
+  padding: 0.5em 0 1em 0;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 700px) {
+  section {
+    padding: 1em 0.2em;
+    border-radius: 10px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
