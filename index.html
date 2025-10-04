@@ -1,7 +1,47 @@
-<html>
-  <head><title>My Fun Portfolio</title></head>
-  <body>
-    <h1>Welcome!</h1>
-    <p>This is my lively portfolio site!</p>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rupa Shiva Dharshini Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add your handwriting font in your CSS file for headings! -->
+  <style>
+    /* Example font usage */
+    @font-face {
+      font-family: 'MyHandwriting';
+      src: url('assets/myhandwriting.ttf');
+    }
+    h1, h2 {
+      font-family: 'MyHandwriting', cursive;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Home / Dynamic Intro -->
+<section id="home">
+  <h1>Hi, I'm Rupa!</h1>
+  <div id="dynamic-titles">
+    <span>I am a </span>
+    <span id="role"><!-- Roles will rotate here! --></span>
+  </div>
+  <p>Welcome to my energetic, ever-evolving portfolio.</p>
+  <!-- Add a GIF or illustration for fun -->
+  <img src="assets/achievement.gif" alt="Fun graphic" width="200">
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Curious learner, creative explorer, passionate about AI, design, and storytelling. I love sharing what I discover and building playful tech.</p>
+  <ul>
+    <li>Engineer
