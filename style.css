@@ -1,4 +1,10 @@
 /* style.css - Horizontal Scrolling Portfolio */
+@font-face {
+  font-family: 'MyHandwriting';
+  src: url('assets/Myfont_vrsd-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Enable horizontal scrolling for main sections */
 body, html {
