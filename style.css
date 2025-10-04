@@ -4,6 +4,8 @@
   src: url('assets/Myfont_vrsd-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-size: 2em;     /* Make the animated role bigger and dynamic */
+
 }
 
 /* Enable horizontal scrolling for main sections */
