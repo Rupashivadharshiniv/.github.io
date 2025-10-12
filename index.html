@@ -4,15 +4,34 @@
   <meta charset="UTF-8">
   <title>Rupa Shiva Dharshini</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Add your handwriting font in your CSS file for headings! -->
   <style>
-    /* Example font usage */
     @font-face {
       font-family: 'MyHandwriting';
       src: url('assets/myhandwriting.ttf');
     }
     h1, h2 {
       font-family: 'MyHandwriting', cursive;
+    }
+    .sticky-note-about {
+      background: #fffbe6;
+      border: 2px solid #ffe066;
+      border-radius: 18px 8px 22px 10px;
+      box-shadow: 4px 8px 18px #f7d95e77, 0 1px 4px #bbb;
+      max-width: 340px;
+      padding: 1.1em 1.4em 1.3em 1.4em;
+      margin: 18px auto 25px;
+      position: relative;
+      font-family: 'Comic Sans MS', 'Homemade Apple', cursive, sans-serif;
+      color: #6b521a;
+      letter-spacing: 0.05em;
+    }
+    .sticky-note-about strong {
+      font-size: 1.12em;
+      color: #d49b09;
+    }
+    .sticky-note-about p {
+      margin: 0.7em 0 0;
+      font-size: 0.99em;
     }
   </style>
 </head>
@@ -33,63 +52,59 @@
     <span id="role"><!-- Roles will rotate here! --></span>
   </div>
   <p>Welcome to my energetic, ever-evolving portfolio.</p>
-  <!-- Add a GIF or illustration for fun -->
   <img src="assets/achievement.gif" alt="Fun graphic" width="200">
 </section>
 
-  <section id="blog">
+<section id="resume">
+  <div class="sticky-note-about">
+    <strong>About Me 📝</strong>
+    <p>Beyond the bullet points—I'm driven by <b>curiosity</b> and finding playful ways to connect <b>tech</b> & <b>creativity</b>!</p>
+  </div>
+  <h2>Resume</h2>
+  <p> Download my resume or view it below:</p>
+  <a href="assets/Rupa_Shiva_Dharshini_V.pdf" target="_blank" style="font-weight:bold;color:#ff7e59;">Download Resume PDF</a>
+  <iframe src="assets/Rupa_Shiva_Dharshini_V.pdf" width="100%" height="500px" style="border-radius:10px;margin-top:1em;"></iframe>
+</section>
+
+<section id="blog">
   <h2>Blog</h2>
   <p>Latest stories, tech musings, & creative experiments!</p>
-  <!-- List blog entries or link to your blog page -->
 </section>
 
-<section id="resume">
-  <h2>Resume</h2>
-  <p> Resume:</p>
-  <a href="assets/Rupa_Shiva_Dharshini_V.pdf" target="_blank" style="font-weight:bold;color:#ff7e59;">Download Resume PDF</a>
-  <iframe src="assets/resume.pdf" width="100%" height="500px" style="border-radius:10px;margin-top:1em;"></iframe>
-</section>
-
-  <section id="photography">
+<section id="photography">
   <h2>Streetsleuthsaga Photography</h2>
   <p>Explore select shots below, or see my full gallery and recent adventures on Instagram.</p>
-
-  <!-- Stylish Instagram badge button -->
   <a href="https://instagram.com/streetsleuthsaga" target="_blank" style="padding:12px 24px;background:#ff7e59;color:#fff;font-weight:bold;border-radius:12px;text-decoration:none;display:inline-block;margin-bottom:22px;">
     See All My Photography on Instagram
   </a>
-
-  <!-- Optional: add a mini-gallery or thumbnails here, or just use the button above! -->
+  <!-- Add a mini-gallery or thumbnails here if you want! -->
 </section>
 
 <footer>
   <span>Created with ❤️ by Rupa Shiva Dharshini &copy; 2025</span>
 </footer>
 
-  <div class="sticky-note-about">
-  <strong>About Me 📝</strong>
-  <p>Beyond the bullet points—I'm driven by <b>curiosity</b> and finding playful ways to connect <b>tech</b> & <b>creativity</b>!</p>
-</div>
-
 <!-- About -->
 <section id="about">
   <h2>About Me</h2>
   <p>Curious learner, creative explorer, passionate about AI, design, and storytelling. I love sharing what I discover and building playful tech.</p>
   <ul>
-    <li>Engineer
+    <li>Engineer</li>
+    <!-- Add more personal details here if you want -->
+  </ul>
+</section>
+
 <script>
   // List of roles to swap
   const roles = [
-  "an engineer",                    // Start strong & professional
-  "tech crazy",                  // Build on the tech theme
-  "a professional brainstormer", 
-  "a learner of things", // Show your creative process
-  "a writer, sometimes a coffee philosopher",  // Playful & thoughtful
-  "an avid reader (books devoured in one night or over seven months)",  // Quirky & relatable
-  "a photographer, pun enthusiast",  
-   "dreamer"// Light & fun
-
-    
+    "an engineer",                    // Start strong & professional
+    "tech crazy",                  // Build on the tech theme
+    "a professional brainstormer", 
+    "a learner of things", // Show your creative process
+    "a writer, sometimes a coffee philosopher",  // Playful & thoughtful
+    "an avid reader (books devoured in one night or over seven months)",  // Quirky & relatable
+    "a photographer, pun enthusiast",  
+    "dreamer" // Light & fun
     // add as many as you like!
   ];
 
@@ -99,3 +114,5 @@
     i = (i + 1) % roles.length;
   }, 1600); // changes every 1.6 seconds
 </script>
+</body>
+</html>
