@@ -38,8 +38,8 @@ body, html {
   font-family: 'Segoe UI', 'Arial', sans-serif;
   background: #f7fafc;
   color: #222;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 /* Container to hold all sections in a row */
@@ -48,7 +48,7 @@ body, html {
   flex-direction: row;
   width: 100vw;
   height: 100vh;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
 
