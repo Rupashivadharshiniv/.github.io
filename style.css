@@ -42,7 +42,7 @@ body, html {
   overflow-y: auto;
 }
 
-/* Container to hold all sections in a row */
+/* Container to hold all sections in a row 
 .horizontal-container {
   display: flex;
   flex-direction: row;
