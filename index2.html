@@ -89,6 +89,24 @@
     See All My Photography on Instagram
   </a>
 </section>
+<script>
+  const roles = [
+    "an engineer",
+    "tech enthusiast",
+    "a professional brainstormer", 
+    "a learner of things",
+    "a writer, sometimes a tea philosopher",
+    "an avid reader (books devoured in one night or over seven months)",
+    "a photographer, pun enthusiast",
+    "a dreamer"
+  ];
+
+  let i = 0;
+  setInterval(() => {
+    document.getElementById('role').textContent = roles[i];
+    i = (i + 1) % roles.length;
+  }, 3600);
+</script>
 
 <footer>
   <span>Created with ❤️ by Rupa Shiva Dharshini &copy; 2025</span>
