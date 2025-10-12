@@ -7,6 +7,28 @@
   font-size: 2.8em;     /* Make the animated role bigger and dynamic */
 
 }
+.sticky-note-about {
+  background: #fffbe6;
+  border: 2px solid #ffe066;
+  border-radius: 18px 8px 22px 10px;
+  box-shadow: 4px 8px 18px #f7d95e77, 0 1px 4px #bbb;
+  max-width: 340px;
+  padding: 1.1em 1.4em 1.3em 1.4em;
+  margin: 18px auto 25px;
+  position: relative;
+  font-family: 'Comic Sans MS', 'Homemade Apple', cursive, sans-serif;
+  color: #6b521a;
+  letter-spacing: 0.05em;
+}
+.sticky-note-about strong {
+  font-size: 1.12em;
+  color: #d49b09;
+}
+.sticky-note-about p {
+  margin: 0.7em 0 0;
+  font-size: 0.99em;
+}
+
 
 /* Enable horizontal scrolling for main sections */
 body, html {
