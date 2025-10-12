@@ -106,12 +106,40 @@
     "a dreamer"
   ];
 
-  let i = 0;
-  setInterval(() => {
-    document.getElementById('role').textContent = roles[i];
-    i = (i + 1) % roles.length;
-  }, 1600);
-</script>
+  let roleElement = document.getElementById('role');
+let roleIndex = 0;
+let charIndex = 0;
+let typing = true;
+
+function typeWriter() {
+  let currentRole = roles[roleIndex];
+  
+  if (typing) {
+    if (charIndex < currentRole.length) {
+      roleElement.textContent += currentRole.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeWriter, 50); // Typing speed
+    } else {
+      typing = false;
+      setTimeout(typeWriter, 1200); // Pause before erasing
+    }
+  } else {
+    if (charIndex > 0) {
+      roleElement.textContent = currentRole.substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(typeWriter, 32); // Erasing speed
+    } else {
+      typing = true;
+      roleIndex = (roleIndex + 1) % roles.length;
+      setTimeout(typeWriter, 180); // Pause before typing next phrase
+    }
+  }
+}
+
+// clear out initially in case your HTML had leftover text
+roleElement.textContent = "";
+typeWriter();
+</script>  
 
 <footer>
   <span>Created with ❤️ by Rupa Shiva Dharshini &copy; 2025</span>
