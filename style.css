@@ -1,71 +1,33 @@
-/* style.css - Horizontal Scrolling Portfolio */
 @font-face {
   font-family: 'MyHandwriting';
   src: url('assets/Myfont_vrsd-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-size: 2.8em;     /* Make the animated role bigger and dynamic */
-
-}
-.sticky-note-about {
-  background: #fffbe6;
-  border: 2px solid #ffe066;
-  border-radius: 18px 8px 22px 10px;
-  box-shadow: 4px 8px 18px #f7d95e77, 0 1px 4px #bbb;
-  max-width: 340px;
-  padding: 1.1em 1.4em 1.3em 1.4em;
-  margin: 18px auto 25px;
-  position: relative;
-  font-family: 'Comic Sans MS', 'Homemade Apple', cursive, sans-serif;
-  color: #6b521a;
-  letter-spacing: 0.05em;
-}
-.sticky-note-about strong {
-  font-size: 1.12em;
-  color: #d49b09;
-}
-.sticky-note-about p {
-  margin: 0.7em 0 0;
-  font-size: 0.99em;
 }
 
-
-/* Enable horizontal scrolling for main sections */
 body, html {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Segoe UI', 'Arial', sans-serif;
-  background: #f7fafc;
+  background: #f5f4fa;
   color: #222;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
-/* Container to hold all sections in a row 
-.horizontal-container {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-/* Each section takes up full viewport width/height and snaps */
+/* Stack sections vertically */
 section {
-  min-width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  padding: 60px 40px;
+  width: 100vw;
+  max-width: 700px;
+  margin: 85px auto 40px auto;
+  padding: 44px 18px 36px 18px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: #fff;
-  margin-right: 10px;
-  border-radius: 30px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.09);
+  border-radius: 26px;
+  box-shadow: 0 6px 24px rgba(76,68,139,0.09);
+  display: block;
+  position: relative;
 }
 
 /* Navigation bar stays fixed at top */
@@ -74,15 +36,69 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
-  background: #ff7e59;
+  background: #765cf6;
   display: flex;
   justify-content: center;
   gap: 2em;
   padding: 1em 0;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(76,68,139,0.12);
+  border-radius: 0 0 22px 22px;
 }
-/* Collapsible Publications Custom Styles */
+nav a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+  padding: 0.36em 0.9em;
+  border-radius: 8px;
+}
+nav a:hover {
+  color: #765cf6;
+  background: #ede6ff;
+}
+
+h1, h2 {
+  font-family: 'MyHandwriting', cursive, 'Segoe UI', 'Arial', sans-serif;
+  color: #765cf6;
+  margin-bottom: 0.4em;
+}
+
+.sticky-note-about {
+  background: #eee8fa;
+  border: 2px solid #a99af9;
+  border-radius: 18px 8px 22px 10px;
+  box-shadow: 4px 8px 18px #b7aef6a0, 0 1px 4px #aaa;
+  max-width: 340px;
+  padding: 1.1em 1.4em 1.3em 1.4em;
+  margin: 18px auto 25px;
+  position: relative;
+  font-family: 'Comic Sans MS', 'Homemade Apple', cursive, sans-serif;
+  color: #574579;
+  letter-spacing: 0.05em;
+}
+.sticky-note-about strong {
+  font-size: 1.12em;
+  color: #6a33c1;
+}
+.sticky-note-about p {
+  margin: 0.7em 0 0;
+  font-size: 0.99em;
+}
+
+.books-reading {
+  font-size: 0.96em;
+  color: #4d4799;
+  margin: 0 0 1.1em 1.2em;
+  padding-left: 1em;
+  list-style-type: square;
+}
+.books-reading li {
+  margin: 0.24em 0;
+  padding-left: 0.6em;
+}
+
 .compact-pubs {
   font-size: 0.91em;
   margin: 0.4em 0 0.2em 0 !important;
@@ -110,13 +126,13 @@ nav {
   font-size: 0.89em !important;
 }
 .compact-pubs .pub-link {
-  color: #ff7e59;
+  color: #765cf6;
   font-weight: 500;
   text-decoration: underline;
   font-size: 0.97em;
 }
 .compact-pubs .pub-link:hover {
-  color: #c44921;
+  color: #3a2593;
   text-decoration: none;
 }
 /* Arrow indication for details summary */
@@ -127,31 +143,27 @@ details.compact-publications summary span::before {
   content: '► ';
 }
 
-
-
-
-nav a {
+.insta-btn {
+  padding: 12px 24px;
+  background: #7864ea;
   color: #fff;
   font-weight: bold;
+  border-radius: 12px;
   text-decoration: none;
-  font-size: 1.1em;
-  transition: color 0.3s;
+  display: inline-block;
+  margin-bottom: 22px;
+  transition: background 0.3s;
 }
-nav a:hover {
+.insta-btn:hover {
+  background: #a99af9;
   color: #222;
-}
-
-h1, h2 {
-  font-family: 'MyHandwriting', cursive, 'Segoe UI', 'Arial', sans-serif;
-  color: #ff7e59;
-  margin-bottom: 0.4em;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  background: #ff7e59;
+  background: #7864ea;
   color: #fff;
   text-align: center;
   padding: 0.4em 0;
@@ -162,11 +174,18 @@ footer {
 /* Responsive tweaks for mobile */
 @media (max-width: 800px) {
   section {
-    padding: 40px 10px;
+    padding: 24px 4px;
     border-radius: 14px;
+    margin-top: 80px;
+    margin-bottom: 20px;
   }
   nav {
     gap: 0.6em;
     font-size: 0.9em;
+    border-radius: 0 0 14px 14px;
+  }
+  footer {
+    border-radius: 0 0 14px 14px;
+    padding: 0.3em 0;
   }
 }
