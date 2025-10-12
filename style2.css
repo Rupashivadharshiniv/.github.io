@@ -46,6 +46,13 @@ nav a:hover {
   padding: 54px 32px 42px 32px;
 }
 
+.profile-img-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .profile-pic {
   width: 145px;
   height: 145px;
@@ -54,6 +61,24 @@ nav a:hover {
   box-shadow: 0 6px 18px #c6c3e9;
   border: 2px solid #e2def8;
   margin-bottom: 30px;
+}
+
+.dynamic-iam {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background: rgba(120,100,234,0.14);
+  color: #28206a;
+  padding: 7px 20px 7px 20px;
+  border-radius: 14px;
+  font-size: 1.16em;
+  font-weight: 600;
+  box-shadow: 0 2px 8px #c6c3e98a;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  z-index: 2;
+  backdrop-filter: blur(2px);
 }
 
 .hello-header {
@@ -267,5 +292,10 @@ hr {
   .hero-container{
     padding: 7vw 3vw 6vw 3vw;
     max-width: 96vw;
+  }
+  .dynamic-iam {
+    font-size: 1em;
+    padding: 4px 10px;
+    bottom: 6px;
   }
 }
