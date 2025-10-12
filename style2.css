@@ -54,8 +54,8 @@ nav a:hover {
 }
 
 .profile-pic {
-  width: 145px;
-  height: 145px;
+  width: 200px;
+  height: 200px;
   border-radius: 16px;
   object-fit: cover;
   box-shadow: 0 6px 18px #c6c3e9;
@@ -66,13 +66,13 @@ nav a:hover {
 .dynamic-iam {
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: 16px;
   transform: translateX(-50%);
   background: rgba(120,100,234,0.14);
   color: #28206a;
-  padding: 7px 20px 7px 20px;
-  border-radius: 14px;
-  font-size: 1.16em;
+  padding: 10px 26px;
+  border-radius: 16px;
+  font-size: 1.28em;
   font-weight: 600;
   box-shadow: 0 2px 8px #c6c3e98a;
   letter-spacing: 0.01em;
@@ -293,9 +293,13 @@ hr {
     padding: 7vw 3vw 6vw 3vw;
     max-width: 96vw;
   }
+    .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
   .dynamic-iam {
     font-size: 1em;
-    padding: 4px 10px;
-    bottom: 6px;
+    padding: 6px 16px;
+    bottom: 8px;
   }
 }
