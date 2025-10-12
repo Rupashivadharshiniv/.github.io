@@ -13,21 +13,21 @@
       font-family: 'MyHandwriting', cursive;
     }
     .sticky-note-about {
-      background: #fffbe6;
-      border: 2px solid #ffe066;
+      background: #eee8fa;
+      border: 2px solid #a99af9;
       border-radius: 18px 8px 22px 10px;
-      box-shadow: 4px 8px 18px #f7d95e77, 0 1px 4px #bbb;
+      box-shadow: 4px 8px 18px #b7aef6a0, 0 1px 4px #aaa;
       max-width: 340px;
       padding: 1.1em 1.4em 1.3em 1.4em;
       margin: 18px auto 25px;
       position: relative;
       font-family: 'Comic Sans MS', 'Homemade Apple', cursive, sans-serif;
-      color: #6b521a;
+      color: #574579;
       letter-spacing: 0.05em;
     }
     .sticky-note-about strong {
       font-size: 1.12em;
-      color: #d49b09;
+      color: #6a33c1;
     }
     .sticky-note-about p {
       margin: 0.7em 0 0;
@@ -38,58 +38,69 @@
 <body>
 <!-- Navigation -->
 <nav>
-  <a href="#home">01: Home</a>
-  <a href="#resume">02: Resume</a>
-  <a href="#blog">03: Blog</a>
-  <a href="#photography">04: Captured Frames</a>
+  <a href="#home">Home</a>
+  <a href="#resume">Resume</a>
+  <a href="#blog">Blog</a>
+  <a href="#photography">Frames</a>
 </nav>
 
 <!-- Home / Dynamic Intro -->
 <section id="home">
   <h1>Hello, This is Rupa</h1>
   <div id="dynamic-titles">
-    <span>I am</span>
+    <span>I am </span>
     <span id="role"><!-- Roles will rotate here! --></span>
   </div>
   <p>Welcome to my energetic, ever-evolving portfolio.</p>
   <img src="assets/achievement.gif" alt="Fun graphic" width="200">
 </section>
 
+<!-- Resume Section - vertical stack -->
 <section id="resume">
   <div class="sticky-note-about">
     <strong>About Me 📝</strong>
     <p>Beyond the bullet points—I'm driven by <b>curiosity</b> and finding playful ways to connect <b>tech</b> & <b>creativity</b>!</p>
   </div>
   <h2>Resume</h2>
-  <p> Download my resume or view it below:</p>
-  <a href="assets/Rupa_Shiva_Dharshini_V.pdf" target="_blank" style="font-weight:bold;color:#ff7e59;">Download Resume PDF</a>
+  <p>Download my resume or view it below:</p>
+  <a href="assets/Rupa_Shiva_Dharshini_V.pdf" target="_blank" style="font-weight:bold;color:#765cf6;">Download Resume PDF</a>
   <iframe src="assets/Rupa_Shiva_Dharshini_V.pdf" width="100%" height="500px" style="border-radius:10px;margin-top:1em;"></iframe>
-<h3 style="font-size:1.08em; color:#68639d; font-weight:600; margin-bottom:0.5em;">
-  Research Publications
-</h3>
-<details class="compact-publications" style="margin-bottom:0.5em;">
-  <summary style="cursor:pointer; font-size:0.97em; color:#8c88b2; font-weight:500;">
-    <span>Show publications</span>
-  </summary>
-  <ul class="publications-list compact-pubs">
-    <li>
-      <b>Optimizing Book Recommendations through Machine Learning: A Collaborative Filtering and Popularity-Based Framework</b><br>
-      <span class="pub-authors"><i>Authors:</i> R. Kavitha, V Dankan Gowda, V Rupa Shiva Dharshini, Priyadharshini M, Mirzanur Rahman, S. Jegadesan</span><br>
-      <span class="pub-journal">2023 4th IEEE GCAT, Bangalore ·
-        <a class="pub-link" href="https://ieeexplore.ieee.org/document/10353294" target="_blank">Read</a>
-      </span>
-    </li>
-    <li>
-      <b>Performance Comparison of XGBoost and LightGBM Gradient Boosting Algorithms in Predicting Cervical Cancer Risk</b><br>
-      <span class="pub-authors"><i>Authors:</i> R. Kavitha, Rupa Shiva Dharshini V, Priyadharshini M</span><br>
-      <span class="pub-journal">2024 ICCDS, Chennai ·
-        <a class="pub-link" href="https://ieeexplore.ieee.org/document/10560387" target="_blank">Read</a>
-      </span>
-    </li>
+  
+  <h3 style="font-size:1.08em; color:#68639d; font-weight:600; margin:1.2em 0 0.5em;">
+    Currently Reading
+  </h3>
+  <ul class="books-reading">
+    <li>Book 1 Title – Author</li>
+    <li>Book 2 Title – Author</li>
+    <li>Book 3 Title – Author</li>
+    <li>Book 4 Title – Author</li>
   </ul>
-</details>
-<hr style="margin:1.3em 0; border:0; border-top:1px solid #f1f1f1;">
 
+  <h3 style="font-size:1.08em; color:#68639d; font-weight:600; margin-bottom:0.5em;">
+    Research Publications
+  </h3>
+  <details class="compact-publications" style="margin-bottom:0.5em;">
+    <summary style="cursor:pointer; font-size:0.97em; color:#8c88b2; font-weight:500;">
+      <span>Show publications</span>
+    </summary>
+    <ul class="publications-list compact-pubs">
+      <li>
+        <b>Optimizing Book Recommendations through Machine Learning: A Collaborative Filtering and Popularity-Based Framework</b><br>
+        <span class="pub-authors"><i>Authors:</i> R. Kavitha, V Dankan Gowda, V Rupa Shiva Dharshini, Priyadharshini M, Mirzanur Rahman, S. Jegadesan</span><br>
+        <span class="pub-journal">2023 4th IEEE GCAT, Bangalore ·
+          <a class="pub-link" href="https://ieeexplore.ieee.org/document/10353294" target="_blank">Read</a>
+        </span>
+      </li>
+      <li>
+        <b>Performance Comparison of XGBoost and LightGBM Gradient Boosting Algorithms in Predicting Cervical Cancer Risk</b><br>
+        <span class="pub-authors"><i>Authors:</i> R. Kavitha, Rupa Shiva Dharshini V, Priyadharshini M</span><br>
+        <span class="pub-journal">2024 ICCDS, Chennai ·
+          <a class="pub-link" href="https://ieeexplore.ieee.org/document/10560387" target="_blank">Read</a>
+        </span>
+      </li>
+    </ul>
+  </details>
+  <hr style="margin:1.3em 0; border:0; border-top:1px solid #e6e6f3;">
 </section>
 
 <section id="blog">
@@ -100,37 +111,33 @@
 <section id="photography">
   <h2>Streetsleuthsaga Photography</h2>
   <p>Explore select shots below, or see my full gallery and recent adventures on Instagram.</p>
-  <a href="https://instagram.com/streetsleuthsaga" target="_blank" style="padding:12px 24px;background:#ff7e59;color:#fff;font-weight:bold;border-radius:12px;text-decoration:none;display:inline-block;margin-bottom:22px;">
+  <a href="https://instagram.com/streetsleuthsaga" target="_blank" class="insta-btn">
     See All My Photography on Instagram
   </a>
-  <!-- Add a mini-gallery or thumbnails here if you want! -->
 </section>
 
 <footer>
   <span>Created with ❤️ by Rupa Shiva Dharshini &copy; 2025</span>
 </footer>
 
-
-
 <script>
   // List of roles to swap
   const roles = [
-    "an engineer",                    // Start strong & professional
-    "tech crazy",                  // Build on the tech theme
-    "a professional brainstormer", 
-    "a learner of things", // Show your creative process
-    "a writer, sometimes a coffee philosopher",  // Playful & thoughtful
-    "an avid reader (books devoured in one night or over seven months)",  // Quirky & relatable
-    "a photographer, pun enthusiast",  
-    "dreamer" // Light & fun
-    // add as many as you like!
+    "an engineer",
+    "tech crazy",
+    "a professional brainstormer",
+    "a learner of things",
+    "a writer, sometimes a coffee philosopher",
+    "an avid reader (books devoured in one night or over seven months)",
+    "a photographer, pun enthusiast",
+    "dreamer"
   ];
 
   let i = 0;
   setInterval(() => {
     document.getElementById('role').textContent = roles[i];
     i = (i + 1) % roles.length;
-  }, 1600); // changes every 1.6 seconds
+  }, 1600);
 </script>
 </body>
 </html>
