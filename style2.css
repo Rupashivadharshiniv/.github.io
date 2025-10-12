@@ -54,13 +54,12 @@ nav a:hover {
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 6px 18px #c6c3e9;
-  border: 2px solid #e2def8;
-  margin-bottom: 30px;
+  border-radius: 50%;
+  display: block;
 }
 
 .dynamic-iam {
@@ -94,6 +93,18 @@ nav a:hover {
   font-weight: 700;
   margin-bottom: 0.32em;
   letter-spacing: 0.03em;
+}
+.profile-img-frame {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 40px #c6c3e980;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bio-desc {
   font-size: 1.09em;
@@ -145,8 +156,8 @@ nav a:hover {
   justify-content: center;
 }
 .icon-link {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   opacity: 0.93;
   transition: opacity 0.2s;
 }
@@ -293,13 +304,8 @@ hr {
     padding: 7vw 3vw 6vw 3vw;
     max-width: 96vw;
   }
-    .profile-pic {
-    width: 130px;
-    height: 130px;
-  }
-  .dynamic-iam {
-    font-size: 1em;
-    padding: 6px 16px;
-    bottom: 8px;
+  
+.profile-img-frame { width: 130px; height: 130px; }
+  .dynamic-iam { font-size: 1em; padding: 6px 14px; bottom: 7px; 
   }
 }
